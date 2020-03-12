@@ -7,6 +7,11 @@ IPv6 via radvd: radvdGen.php<br>
 
 ## Usage
 If you got a /56 or larger you should assign a /64 per VM so go with radvdGen.php<br>
-You will also need to deploy ndppd.
+If you got a /64 or less, you need to configure it static, skip radvdGen.php and just use subnetGenv6.php<br>
+**ndppd is needed if any IPv6 is in use.**
 
-If you got a /64 or less, you need to configure it static, skip radvdGen.php and just use subnetGenv6.php
+You likely will also need to add this to your /etc/sysctl.conf<br>
+net.ipv6.conf.all.forwarding=1<br>
+net.ipv6.conf.default.forwarding=1<br>
+net.ipv6.conf.all.proxy_ndp=1<br>
+net.ipv6.conf.default.proxy_ndp=1<br>
