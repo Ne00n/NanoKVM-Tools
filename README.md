@@ -15,3 +15,6 @@ net.ipv6.conf.all.forwarding=1<br>
 net.ipv6.conf.default.forwarding=1<br>
 net.ipv6.conf.all.proxy_ndp=1<br>
 net.ipv6.conf.default.proxy_ndp=1<br>
+
+All you need to do is afterwards, assign the correct MAC to a network adpater in Proxmox + correct Bridge.<br>
+Depending on your setup, IPv4 and IPv6 will be assigned automatically to each VM.
