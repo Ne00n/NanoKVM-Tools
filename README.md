@@ -4,4 +4,6 @@ DHCPv4: dhcpGen.php
 
 Networkv4: subnetGen.php
 
-Networkv6 Static /80: subnetGenv6.php
+Networkv6: subnetGenv6.php
+
+IPv6 via radvd: radvdGen.php

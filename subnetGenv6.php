@@ -1,7 +1,7 @@
 <?php
 //Generator for /etc/network/interfaces
-//Deploys IPv6 /80 Static when only a /64 is available + Blocks email
-//Tools used to Generate the /80 => https://subnettingpractice.com/ipv6_subnetting.html used fd6a:81db:899f:f1ea::/64
+//Deploys /80 (Static) or /64 IPv6 Networking per Bridge + Blocks email
+//Tools used to Generate the /80 or /64 Subnets => https://subnettingpractice.com/ipv6_subnetting.html
 
 $v6 = 'fd6a:81db:899f:f1ea::/80
 fd6a:81db:899f:f1ea:1::/80
